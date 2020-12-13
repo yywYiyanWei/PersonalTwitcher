@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="GreyLight 1" uuid="111a6ae9-ed50-4bc0-b37c-d72c14edea25">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://greylight-database-instance.cbnbuolmqxi4.us-east-2.rds.amazonaws.com:3306/greylight1</jdbc-url>
+    </data-source>
+  </component>
+</project>

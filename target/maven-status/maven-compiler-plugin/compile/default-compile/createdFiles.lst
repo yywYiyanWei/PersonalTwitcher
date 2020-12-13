@@ -1,0 +1,10 @@
+com/laioffer/jupiter/entity/LoginRequestBody.class
+com/laioffer/jupiter/entity/User$Builder.class
+com/laioffer/jupiter/external/TwitchException.class
+com/laioffer/jupiter/entity/LoginResponseBody.class
+com/laioffer/jupiter/external/TwitchClient.class
+com/laioffer/jupiter/entity/Game$1.class
+com/laioffer/jupiter/servlet/ServletUtil.class
+com/laioffer/jupiter/entity/User$1.class
+com/laioffer/jupiter/entity/User.class
+com/laioffer/jupiter/entity/Game$Builder.class
