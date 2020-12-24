@@ -19,15 +19,14 @@ import java.util.Map;
 @WebServlet(name = "FavoriteServlet", urlPatterns = {"/favorite"})
 public class FavoriteServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-//
         HttpSession session = request.getSession(false);
         if (session == null) {
             response.setStatus(HttpServletResponse.SC_FORBIDDEN);
             return;
         }
         String userId = (String) session.getAttribute("user_id");
-        ObjectMapper mapper = new ObjectMapper();
-        FavoriteRequestBody body = mapper.readValue(request.getReader(), FavoriteRequestBody.class);
+        FavoriteRequestBody body = ServletUtil.readRequestBody(FavoriteRequestBody.class, request);
+
         if (body == null) {
             response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
             return;
@@ -79,8 +78,7 @@ public class FavoriteServlet extends HttpServlet {
             return;
         }
         String userId = (String) session.getAttribute("user_id");
-        ObjectMapper mapper = new ObjectMapper();
-        FavoriteRequestBody body = mapper.readValue(request.getReader(), FavoriteRequestBody.class);
+        FavoriteRequestBody body = ServletUtil.readRequestBody(FavoriteRequestBody.class, request);
         if (body == null) {
             response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
             return;
